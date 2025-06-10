@@ -63,12 +63,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Brand colors from logo
+				// Brand colors from Bizenia logo
 				brand: {
-					blue: 'hsl(var(--brand-blue))',
+					red: 'hsl(var(--brand-red))',
 					orange: 'hsl(var(--brand-orange))',
-					'blue-light': 'hsl(var(--brand-blue-light))',
-					'orange-light': 'hsl(var(--brand-orange-light))'
+					yellow: 'hsl(var(--brand-yellow))',
+					'red-light': 'hsl(var(--brand-red-light))',
+					'orange-light': 'hsl(var(--brand-orange-light))',
+					'yellow-light': 'hsl(var(--brand-yellow-light))'
 				}
 			},
 			borderRadius: {
