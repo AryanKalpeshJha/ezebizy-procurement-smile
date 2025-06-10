@@ -1,4 +1,3 @@
-
 import { ArrowRight, CheckCircle, Users, Globe, Truck, Shield, Star, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -51,7 +50,7 @@ const Index = () => {
               <a href="#industries" className="text-foreground hover:text-primary transition-colors">Industries</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
             </nav>
-            <Button className="bg-gradient-to-r from-blue-500 to-orange-500 text-white hover:opacity-90">
+            <Button className="bg-brand-gradient text-white hover:opacity-90">
               Get Quote <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
@@ -59,16 +58,16 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-orange-50 py-20">
+      <section className="relative bg-gradient-to-br from-brand-blue-light/20 via-white to-brand-orange-light/20 py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge className="bg-gradient-to-r from-blue-500 to-orange-500 text-white">
+              <Badge className="bg-brand-gradient text-white">
                 25+ Years of Excellence
               </Badge>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 Worklife Solutions
-                <span className="block text-gradient bg-gradient-to-r from-blue-600 to-orange-600 bg-clip-text text-transparent">
+                <span className="block text-gradient">
                   for All
                 </span>
               </h1>
@@ -76,10 +75,10 @@ const Index = () => {
                 We inspire what could be, and help make it a reality. Your trusted partner for promotional products and indirect procurement solutions, serving businesses from solopreneurs to Fortune 100 companies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-blue-500 to-orange-500 text-white hover:opacity-90">
+                <Button size="lg" className="bg-brand-gradient text-white hover:opacity-90">
                   Start Your Journey <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button size="lg" variant="outline" className="border-2">
+                <Button size="lg" variant="outline" className="border-2 border-primary hover:bg-primary hover:text-primary-foreground">
                   View Our Products
                 </Button>
               </div>
@@ -99,7 +98,7 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-r from-blue-100 to-orange-100 rounded-3xl p-8 transform rotate-3 shadow-lg">
+              <div className="bg-gradient-to-r from-brand-blue-light/30 to-brand-orange-light/30 rounded-3xl p-8 transform rotate-3 shadow-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
                   alt="Professional workspace"
@@ -122,30 +121,30 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-2 hover:shadow-lg transition-all duration-300">
+            <Card className="border-2 hover:shadow-lg transition-all duration-300 hover:border-primary/20">
               <CardContent className="p-8 text-center">
-                <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-blue-600" />
+                <div className="bg-brand-blue-light/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-8 w-8 text-brand-blue" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Expert Team</h3>
                 <p className="text-muted-foreground">Highly qualified professionals with decades of combined experience in procurement and promotional solutions.</p>
               </CardContent>
             </Card>
             
-            <Card className="border-2 hover:shadow-lg transition-all duration-300">
+            <Card className="border-2 hover:shadow-lg transition-all duration-300 hover:border-secondary/20">
               <CardContent className="p-8 text-center">
-                <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Globe className="h-8 w-8 text-orange-600" />
+                <div className="bg-brand-orange-light/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Globe className="h-8 w-8 text-brand-orange" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Global Reach</h3>
                 <p className="text-muted-foreground">Multi-channel accessibility through direct sales, eCommerce, mobile, conversational commerce, and retail.</p>
               </CardContent>
             </Card>
             
-            <Card className="border-2 hover:shadow-lg transition-all duration-300">
+            <Card className="border-2 hover:shadow-lg transition-all duration-300 hover:border-primary/20">
               <CardContent className="p-8 text-center">
-                <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Shield className="h-8 w-8 text-green-600" />
+                <div className="bg-brand-blue-light/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-8 w-8 text-brand-blue" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Trust & Quality</h3>
                 <p className="text-muted-foreground">Commitment to quality, timely delivery, and innovative solutions backed by robust technology-driven processes.</p>
@@ -156,7 +155,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section id="services" className="py-20 bg-gradient-to-br from-brand-blue-light/10 to-brand-orange-light/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Our Comprehensive Services</h2>
@@ -203,7 +202,7 @@ const Index = () => {
       </section>
 
       {/* Industries Section */}
-      <section id="industries" className="py-20 bg-gradient-to-br from-orange-50 to-blue-50">
+      <section id="industries" className="py-20 bg-gradient-to-br from-brand-orange-light/10 to-brand-blue-light/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Industries We Serve</h2>
@@ -231,32 +230,32 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <Truck className="h-10 w-10 text-blue-600" />
+              <div className="bg-brand-blue-light/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Truck className="h-10 w-10 text-brand-blue" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
               <p className="text-muted-foreground">Timely delivery across domestic and international markets</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-orange-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-10 w-10 text-orange-600" />
+              <div className="bg-brand-orange-light/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Shield className="h-10 w-10 text-brand-orange" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Quality Assured</h3>
               <p className="text-muted-foreground">Rigorous quality control and premium product standards</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-10 w-10 text-green-600" />
+              <div className="bg-brand-blue-light/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-10 w-10 text-brand-blue" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Expert Support</h3>
               <p className="text-muted-foreground">Dedicated team of qualified professionals</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <Star className="h-10 w-10 text-purple-600" />
+              <div className="bg-brand-orange-light/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Star className="h-10 w-10 text-brand-orange" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Best Prices</h3>
               <p className="text-muted-foreground">Everyday low prices with no compromise on quality</p>
@@ -266,7 +265,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-orange-600 text-white">
+      <section className="py-20 bg-brand-gradient text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Procurement Experience?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
@@ -294,36 +293,36 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <Card className="text-center p-8">
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
               <CardContent className="space-y-4">
-                <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
-                  <Phone className="h-8 w-8 text-blue-600" />
+                <div className="bg-brand-blue-light/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+                  <Phone className="h-8 w-8 text-brand-blue" />
                 </div>
                 <h3 className="text-xl font-semibold">Call Us</h3>
                 <p className="text-muted-foreground">Speak with our experts</p>
-                <Button variant="outline" className="w-full">Contact Now</Button>
+                <Button variant="outline" className="w-full border-primary hover:bg-primary hover:text-primary-foreground">Contact Now</Button>
               </CardContent>
             </Card>
             
-            <Card className="text-center p-8">
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
               <CardContent className="space-y-4">
-                <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
-                  <Mail className="h-8 w-8 text-orange-600" />
+                <div className="bg-brand-orange-light/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+                  <Mail className="h-8 w-8 text-brand-orange" />
                 </div>
                 <h3 className="text-xl font-semibold">Email Us</h3>
                 <p className="text-muted-foreground">Send us your requirements</p>
-                <Button variant="outline" className="w-full">Send Email</Button>
+                <Button variant="outline" className="w-full border-secondary hover:bg-secondary hover:text-secondary-foreground">Send Email</Button>
               </CardContent>
             </Card>
             
-            <Card className="text-center p-8">
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
               <CardContent className="space-y-4">
-                <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
-                  <MapPin className="h-8 w-8 text-green-600" />
+                <div className="bg-brand-blue-light/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+                  <MapPin className="h-8 w-8 text-brand-blue" />
                 </div>
                 <h3 className="text-xl font-semibold">Visit Us</h3>
                 <p className="text-muted-foreground">Meet our team in person</p>
-                <Button variant="outline" className="w-full">Get Directions</Button>
+                <Button variant="outline" className="w-full border-primary hover:bg-primary hover:text-primary-foreground">Get Directions</Button>
               </CardContent>
             </Card>
           </div>
